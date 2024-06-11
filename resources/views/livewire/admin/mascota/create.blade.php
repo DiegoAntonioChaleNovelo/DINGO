@@ -111,8 +111,8 @@
                     id="imagen"
                     wire:model="imagen"
                 />
-                @error('imagen') <span>{{ $message }}</span> @enderror
             </div>
+
 
             <!-- Botones de acción -->
             <div class="flex justify-between">
@@ -128,6 +128,8 @@
                 >Listo</button>
             </div>
         </form>
+
+
     </div>
 
 </div>

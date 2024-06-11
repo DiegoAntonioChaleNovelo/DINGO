@@ -10,6 +10,10 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -17,8 +21,17 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="bg-[#AADAE6] bg-opacity-[70%] ">
-        <div class="font-sans text-gray-900 antialiased">
+    <style>
+        body {
+            .koho-regular {
+                font-family: "KoHo", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+    </style>
+    <body class="bg-[#AADAE6] bg-opacity-[70%] text-[#545454] koho-regular">
+        <div class="font-sans text-gray-900 antialiased koho-regular">
             {{ $slot }}
         </div>
 
